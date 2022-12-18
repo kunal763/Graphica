@@ -1,2 +1,2 @@
-# Grahica
+# Graphica
 This is our Graphica repo 
