@@ -39,6 +39,9 @@ h1{
     cursor: pointer;
 
 }
+.nav a{
+    text-decoration: none;
+}
 .nav a:hover{
     text-decoration: underline;
     font-weight: 900;
