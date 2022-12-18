@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <!-- you can avoid adding script file if you already have linked your css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="about_us.css">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
@@ -32,18 +33,16 @@
 
 
 
-            color: transparent;
+            /* color: transparent; */
             background-clip: text;
             -webkit-background-clip: text;
         }
 
         .cont {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%);
-
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
         }
 
         .glasseffect {
@@ -59,7 +58,7 @@
 
         @media screen and (max-width:600px) {
             .cont #main {
-                margin-top: 100px;
+                margin-top: 80px;
             }
 
         }
@@ -67,9 +66,9 @@
     
 </head>
 
-<body id="grad" class="" style="">
+<body id="grad">
     <h1>.</h1>
-    <div class="cont " style="">
+    <div class="cont">
 
         <div id="main"class="glasseffect text-white" style="margin-top: 80px;">
             <h1 class="heading text-white font-medium text-6xl text-center"
