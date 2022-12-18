@@ -23,18 +23,28 @@
     margin: 20px;
 
 }
+h1{
+    font-size: 4em;
+}
+
 .nav-list{
     margin-left: 10vh;
     transition: .2s;
+    cursor: pointer;
 
 }
 .nav-list:hover{
-    letter-spacing: .3em;
-    color: aqua;
+
+}
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 .login{
     position: absolute;
+    cursor: pointer;
     top: 0;
     right: 0;
     margin: 10px;
@@ -55,9 +65,6 @@
 main{
     margin-left: 100px;
     margin-top:150px;
-}
-main h1{
-    font-size: 4em;
 }
 main p{
     font-size: 2em;
