@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQs)</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class='flex items-center justify-center min-h-screen from-purple-100 via-red-300 to-indigo-500 bg-gradient-to-br'>
+        <!-- <div class='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl'>
+        <h1 class="text-xl mb-10 text-center">TAILWINDCSS ACCORDION WITH <code>&lt;details&gt; &lt;summary&gt;</code> HTML Tag</h1> -->
+        <!-- THE ACCORDION WITH <details> <summary> HTML Tag -->
+        <!-- <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
+            <summary class="w-full bg-white text-dark flex justify-between px-4 py-3  after:content-['+']">Morbi at sagittis velit</summary>
+            <p class="px-4 py-3">
+            Nunc posuere dapibus urna quis cursus. Mauris malesuada tincidunt diam vel placerat mi tincidunt ac. Nullam augue urna, venenatis ut blandit eget, auctor vel eros. In ut dolor ante
+            </p>
+        </details>
+
+        <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
+            <summary class="w-full bg-white text-dark flex justify-between px-4 py-3 after:content-['+']">Etiam ut lacus in enim sagittis posuere at a elit</summary>
+            <p class="px-4 py-3">
+            Fusce sed laoreet ex. Aenean justo nisl, eleifend eget eleifend sit amet, imperdiet id libero. Suspendisse et tempus leo, et lacinia arcu. Etiam at ante in est efficitur fringilla eleifend nec tellus. Integer sed auctor lectus, nec ullamcorper arcu. Nullam nec eros elit. Nulla tempor massa ut quam elementum dignissim. Sed eu pulvinar est, vel vehicula dolor. Pellentesque in ante vel elit facilisis consectetur eu id felis
+            </p>
+        </details>
+
+        <details class="w-full bg-white border border-blue-500 cursor-pointer mb-3">
+            <summary class="w-full bg-white text-dark flex justify-between px-4 py-3  after:content-['+']">
+            Nam auctor fringilla magna id porta
+            </summary>
+            <p class="px-4 py-3">
+            Etiam maximus vitae eros eu vestibulum. Donec posuere, magna non tincidunt dignissim, magna tortor mollis augue, at maximus ante lacus vel tellus. Vestibulum vestibulum consectetur tortor id sagittis. Suspendisse nisi ipsum, pretium a lorem at, laoreet condimentum arcu
+            </p>
+        </details>
+        <br> -->
+        <div class="flex justify-center items-center w-screen min-h-screen p-10">
+            <!-- Component Start -->
+            <div class="flex flex-col w-10/12 sm:w-4/5 md:w-4/5 bg-gray-200 backdrop-filter backdrop-blur-sm bg-opacity-20 border border-black">
+                <button class="group border-t border-r border-l border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">What is WeTube?</span>
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">The WeTube app enables you to watch movies and listen to music together with friends, while talking and texting.</p>
+                    </div>
+                </button>
+                <button class="group border-t border-r border-l  border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">How much does WeTube cost?</span>
+                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">Rave is free! While users can purchase Rave Premium for an ad-free experience, the Rave app is free on all platforms, including iOS, Android, Microsoft Windows, and Mac.</p>
+                    </div>
+                </button>
+                <button class="group border border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">What can I watch on WeTube?</span>
+                        <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">Rave supports content from YouTube, Netflix, Amazon Prime, Disney+, HBO Max, Google Drive, Google Photos, Vimeo, and more.</p>
+                    </div>
+                </button>
+                <button class="group border border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">What can I watch on WeTube?</span>
+                        <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">WeTube supports content from YouTube, Netflix, Amazon Prime, Disney+, HBO Max, Google Drive, Google Photos, Vimeo, and more.</p>
+                    </div>
+                </button>
+                <button class="group border border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">How many people can I watch with?</span>
+                        <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">There’s no limit to the number of people who can watch together with you!</p>
+                    </div>
+                </button>
+                <button class="group border border-black focus:outline-none">
+                    <div class="flex items-center justify-between h-12 px-3 font-semibold hover:bg-gray-200">
+                        <span class="truncate">How many people can I watch with?</span>
+                        <svg class="h-4 w-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40 text-left">
+                        <p class="p-4">There’s no limit to the number of people who can watch together with you!</p>
+                    </div>
+                </button>
+            </div>
+            <!-- Component End  -->
+        
+        </div>
+        <style>
+            .max-h-0 {
+	            max-height: 0;
+            }
+
+            .group:focus .group-focus\:max-h-40 {
+	            max-height: 10rem;
+            }
+        </style>
+    </div>
+</div>      
+</body>
+</html>
