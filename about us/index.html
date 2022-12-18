@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- you can avoid adding script file if you already have linked your css -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Quicksand:wght@600&display=swap"
+        rel="stylesheet">
+    <style>
+        #grad {
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+
+        }
+
+        .heading {
+
+
+
+
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        .cont {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .glasseffect {
+
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 5%;
+        }
+
+     @media only screen and (min-width:2160px) {
+            .cont {
+                top: 10rem;
+            }
+             
+        }
+
+        @media only screen and (min-width:1440px) {
+            .cont{
+                top:10rem;
+            }
+        
+        }
+        @media only screen and (min-width:1080px) {
+            .cont{
+                top:10rem;
+            }
+            
+        }
+        @media only screen and (min-width:720px) {
+            .cont{
+                top:8rem;
+            }
+            
+        }
+        @media only screen and (min-width:480px) {
+            .cont{
+                top:40%;
+            }
+            
+        }
+        @media only screen and (min-width:240px) {
+            .cont{
+                top:60%;
+            }
+            
+        }
+        @media only screen and (min-width:144px) {
+            .cont{
+                top:80;
+            }
+            
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="grad" class="" style="font-family: 'Poppins', sans-serif;">
+    <h1 class="heading text-white font-medium text-6xl text-center" style="font-weight: 600; font-style: italic; ">
+        About Us</h1>
+    <div class="cont  mt-14">
+        <div class="glasseffect text-white">
+            <p>Watch Netflix, Disney+, YouTube, Prime Video, HBO MAX &amp; more with friends while texting and talking.
+                <br>
+                - CONNECT with your friends via text or voice chat while you watch together <br>
+                - ENJOY creating a Watch Party on YouTube, Netflix, Disney+, Prime Video and more <br>
+                - LISTEN to music with people from anywhere around the world <br>
+                - SHARE your videos to Google Drive for global movie nights <br>
+                - SYNC your phones and create an instant speaker system <br>
+                - JOIN friends on iOS, other phones, and on computer <br>
+                - CREATE your own mashups by mixing your favorite music videos with RaveDJ
+            </p>
+        </div>
+        <h2 class="text-center mt-3 text-xl font-medium text-white ">
+            Our team
+        </h2>
+        <div class="team flex flex-wrap  items-center justify-center xs:space-x-14 sm:space-x-14 md:space-x-18 lg:space-x-20 xl:space-x-28 2xl:space-x-32 mt-6 text-white ">
+            <div style="font-size: xx-large;">
+                <img src="nepal2.jpg"  class="w-32 " alt="" style="border-radius: 60%;">
+                Nepal
+            </div >
+            <div style="font-size: xx-large;">
+                <img src="myimg.jpg"  class="w-32 " alt="" style="border-radius: 50%;">                Kunal
+            </div>
+            <div style="font-size: xx-large;">
+                <img src="jatin.jpeg"  class="w-32 " alt="" style="border-radius: 50%;">                Jatin
+            </div>
+            <div style="font-size: xx-large;">
+                <img src="vignesh.jpeg"  class="w-32 " alt="" style="border-radius: 50%;">                Vignesh
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

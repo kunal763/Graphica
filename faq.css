@@ -2093,3 +2093,43 @@ input:checked + .toggle-bg {
   }
 }
 
+.list{
+  list-style: none;
+  display: flex;
+  margin: 10px;
+
+}
+
+.nav-list{
+  margin-left: 20vh;
+  transition: .2s;
+  cursor: pointer;
+
+}
+.nav a:hover{
+  text-decoration: underline;
+  font-weight: 900;
+
+}
+
+
+.login{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 5px 30px;
+  transition: .2s;  
+  color: black;
+  background: rgba(255, 255, 255, 0.423);
+  border: none;
+  border-radius: 2px;
+
+}
+.login:hover{
+  color: white;
+  background-color:rgba(134, 32, 32, 0.459);
+
+
+}

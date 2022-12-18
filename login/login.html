@@ -10,6 +10,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <style>
+        *{
+            font-family:Airbnb;
+        }
        
 
         .design {
@@ -20,11 +23,30 @@
             margin-right: -50%;
             transform: translate(-50%, -50%);
         }
+        .list{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
+}
+
+.nav-list{
+    margin-left: 10vh;
+    transition: .2s;
+    cursor: pointer;
+
+}
+@font-face {
+    font-family: 'Airbnb';
+    src: URL('AirbnbCerealBlack.ttf') format('truetype');
+}
+
   
     </style>
 </head>
 
 <body>
+
     <picture>
         <source media="(max-width:414px )" srcset="iphonexr.jpg">
         <source media="(max-width: 1250px)" srcset="partymobile.jpg" >
@@ -38,9 +60,9 @@
             <input type="text" name="" placeholder="Email Id or Phone No."
                 class="h-12 rounded-md py-5 w-80 px-2 outline-yellow-200">
             <input type="password" name="" placeholder="Password" class="h-12 rounded-md my-3 px-2  outline-yellow-200">
-            <button
-                class="text-white text-lg font-semibold bg-yellow-500 py-4 my-2 rounded-md hover:bg-yellow-600 ">Sign
-                In</button>
+          <a href="../video player/index.html" style="padding-left: 35%;" ><button  style="padding: 10px 30px"
+                class="text-white text-lg  font-semibold bg-yellow-500 py-4 my-2 rounded-md hover:bg-yellow-600 " onclick="myfunc()">Sign
+                In</button></a>
             <hr class=" mt-4 pb-2 ">
             <span class="mx-auto text-white">or <span class="hover:underline cursor-pointer font-medium hover:font">Sign In
                     using</span></span>
@@ -54,7 +76,9 @@
             <button class=""><img src="icons8-github-64.png" alt="" srcset=""
                     class="w-12 opacity-90 hover:opacity-100  px-2 hover:animate-bounce"></button>
         </div>
-
+<script>myfunc(){
+    document.location=url('../video player/index.html');
+}</script>
 </body>
 
 </html>

@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Airbnb';
+    src: URL('AirbnbCerealBlack.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: Airbnb;
     color: white;
-
+ 
 }
 
 .background{
@@ -17,14 +22,15 @@
     transition: 2s;
     height: 10000px;
 }
+h1{
+    font-size: 4em;
+    margin-top: 210px;
+}
 .list{
     list-style: none;
     display: flex;
     margin: 20px;
 
-}
-h1{
-    font-size: 4em;
 }
 
 .nav-list{
@@ -33,14 +39,12 @@ h1{
     cursor: pointer;
 
 }
-.nav-list:hover{
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: 900;
 
 }
-/* CSS */
-:root { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
-}
+
 
 .login{
     position: absolute;
@@ -51,16 +55,19 @@ h1{
     padding: 5px 30px;
     transition: .2s;  
     color: black;
-    background: white;
+    background: rgba(255, 255, 255, 0.423);
     border: none;
     border-radius: 2px;
 
 }
 .login:hover{
     color: white;
-    background-color:black;
-    letter-spacing: .5em;
+    background-color:rgba(134, 32, 32, 0.459);
 
+
+}
+ul a{
+        text-decoration: none;
 }
 main{
     margin-left: 100px;
@@ -77,21 +84,70 @@ main a{
     padding: 7px 30px;
     transition: 0.2s;
     color: black;
-    background: white;
+    background: rgba(255, 255, 255, 0.46);
 }
 main a:hover{
-    letter-spacing: 3px;
+
     padding: 10px 30px;
-    background: black ;
+    color: white;
+    background-color:rgba(134, 32, 32, 0.459);
     color: white;
 }
+
 footer p{
     text-align: center;
-    margin-top: 250px;
+    
+    margin-top: 80px;
+    border-radius: 20px;
+    /* background-color: rgb(255,255,255,0.1); */
+    width: 70%;
+    margin-left: auto ;
+    margin-right: auto;
+    padding: 20px 50px;
 }
 @media screen and (max-width:1080px)  {
     .nav-list{
         display: none;
     }
     
+}
+.list{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
+}
+
+.nav-list{
+    margin-left: 10vh;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+
+.login{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 30px;
+    transition: .2s;  
+    color: black;
+    background: rgba(255, 255, 255, 0.423);
+    border: none;
+    border-radius: 2px;
+
+}
+.login:hover{
+    color: white;
+    background-color:rgba(134, 32, 32, 0.459);
+
+
 }

@@ -1,24 +1,25 @@
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Airbnb;
 }
-
+@font-face {
+    font-family: 'Airbnb';
+    src: URL('AirbnbCerealBlack.ttf') format('truetype');
+}
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, #fc5c7d, #6a82fb);
+    background-image: linear-gradient(to bottom right, #501d27, #182151);
     font-family: sans-serif;
     color: white;
-
+/* 
     display: flex;
-    align-items: center;
+    align-items: center; */
 }
 
 .container {
     width: 100vw;
-
     display: grid;
     grid-template-columns: 1.8fr 1.2fr;
     gap: 1rem;
@@ -125,4 +126,19 @@ body {
 
     font: 100 1rem sans-serif;
     padding: 0 .5rem;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.bar button{
+    background-color: #ffffff;
+    color : #1d1b1b;
+    padding: 8px;
+    border-radius: 5px;
+
 }

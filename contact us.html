@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
     <style>
-        body{
-            background-image: linear-gradient(90deg, rgba(255, 196, 0, 0.767) , blue);
+        *{
+            font-family: Airbnb;
+            margin: 0;
+            color: white;
         }
+
         header{
             display: flex;
             align-items: center;
@@ -25,19 +28,27 @@
         .heading{
             text-align: center;
             font-size: 4em;
+            text-shadow: 4px 4px rgba(0,0,0,.4);
         }
         .container{
-            border: solid;
+
             margin: 30px;
             border-radius: 20px;
             padding: 10px;
+            border: solid white 1px;
             display: flex;
             flex-wrap: wrap;
             width: 40%;
+            background-color: (255,255,255.4);
+            box-shadow:10px 15px rgba(255,255,255,0.4);
+            backdrop-filter: blur(4px);
+            
         }
         .container p{
-            margin-right: 20px;
+            /* margin-right: 20px; */
+            margin-top: 10px;
             color: white;
+            margin-left: 20px;
         }
         @media screen and (max-width:650px) {
             .container{
@@ -45,11 +56,62 @@
             }
         }
         /* CSS */
-:root { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: 'Inter var', sans-serif; }
+        @font-face {
+    font-family: 'Airbnb';
+    src: URL('AirbnbCerealBlack.ttf') format('truetype');
+}
+.background{
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    transition: 2s;
+    height: 10000px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
 }
 
+.nav-list{
+    margin-left: 10vh;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.nav a:hover{
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+
+.login{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 30px;
+    transition: .2s;  
+    color: black;
+    background: rgba(255, 255, 255, 0.423);
+    border: none;
+    border-radius: 2px;
+
+}
+.login:hover{
+    color: white;
+    background-color:rgba(134, 32, 32, 0.459);
+
+
+}
 
 
     </style>
@@ -58,6 +120,20 @@
     <link rel="icon" type="image/x-icon" href="data/logo_circle.ico">
 </head>
 <body>
+    <div class="nav">
+        <ul class="list">
+            <li><img src="data/Png_WeTube.png" style="width: 100px;margin: -50% 0%;" alt=""></li>
+            <a href="about us/index.html"><li class="nav-list">ABOUT</li></a>
+            <a href="buy-subscription.html"><li class="nav-list">BUY SUBSCRIPTION</li></a>
+            <a href="contact us.html"><li class="nav-list">CONTACT US</li></a>
+            <a href="faq.html"><li class="nav-list">FAQ</li></a>
+    
+        </ul>
+        <a href="login/login.html"><button class="login">LOGIN</button></a>
+    </div>
+    <div class="background">
+        <video src="data/main-background.mp4" autoplay loop muted></video></div>
+    
     <div class="heading">CONTACT US </div>
     <header>
         <div class="container">
