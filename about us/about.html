@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- you can avoid adding script file if you already have linked your css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @supports (font-variation-settings: normal) {
+            :root {
+                font-family: 'Inter var', sans-serif;
+            }
+        }
+
+        #grad {
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+
+        }
+
+        .heading {
+
+
+
+
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        .cont {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .glasseffect {
+
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 5%;
+        }
+
+        @media screen and (max-width:600px) {
+            .cont #main {
+                margin-top: 100px;
+            }
+
+        }
+    </style>
+    
+</head>
+
+<body id="grad" class="" style="">
+    <h1>.</h1>
+    <div class="cont " style="">
+
+        <div id="main"class="glasseffect text-white" style="margin-top: 80px;">
+            <h1 class="heading text-white font-medium text-6xl text-center"
+                style="font-weight: 600; justify-content:space-between; ">
+                About Us</h1>
+            <p>Watch Netflix, Disney+, YouTube, Prime Video, HBO MAX &amp; more with friends while texting and talking.
+                <br>
+                - CONNECT with your friends via text or voice chat while you watch together <br>
+                - ENJOY creating a Watch Party on YouTube, Netflix, Disney+, Prime Video and more <br>
+                - LISTEN to music with people from anywhere around the world <br>
+                - SHARE your videos to Google Drive for global movie nights <br>
+                - SYNC your phones and create an instant speaker system <br>
+                - JOIN friends on iOS, other phones, and on computer <br>
+                - CREATE your own mashups by mixing your favorite music videos
+            </p>
+        </div>
+        <hr class="mt-4">
+        <h2 class="text-center mt-3 text-6xl font-medium text-white  ">
+            Our team
+        </h2>
+        <div class="team flex flex-wrap  items-center justify-center xs:space-x-14 sm:space-x-14 md:space-x-18 lg:space-x-20 xl:space-x-28 2xl:space-x-32 mt-6 text-white "
+            style="justify-content:space-between;">
+            <div style="font-size: xx-large;">
+                <img src="nepal2.jpg" class="w-32 h-30 " alt="" style=" border-radius: 50%;">
+                Nepal
+            </div>
+            <div style="font-size: xx-large;">
+                <img src="myimg.jpg" class="w-32 h-30 " alt="" style=" border-radius: 50%;"> Kunal
+            </div>
+            <div style="font-size: xx-large;">
+                <img src="jatin.jpeg" class="w-32 h-30" alt="" style=" border-radius: 50%;"> Jatin
+            </div>
+            <div style="font-size: xx-large;">
+                <img src="vignesh.jpeg" class="w-32 h-30" alt="" style=" border-radius: 50%;"> Vignesh
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
