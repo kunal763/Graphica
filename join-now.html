@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(90deg ,rgb(29, 74, 97),rgb(10, 42, 110),rgb(107, 20, 99) );
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            color: black;
+
+        }
+        header{
+            text-align: center;
+            justify-content: center;
+
+        }
+        button{
+            margin: 4px auto 10px auto;
+            padding: 7px 30px;
+            width: 12em;
+            margin-top: 30px;
+            transition: 0.2s;
+            border: none;
+            border-radius: 2px;
+
+        }
+        button:hover{
+            width: 13em;
+            padding: 9px 30px;
+            background-color: black;
+            color: white;
+        }
+        .HEADING{
+            width: 200px;
+        }
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container{
+            margin-top: 40px;
+            background-color: rgba(255,255,255,0.2);
+            backdrop-filter: blur(4px);
+            padding: 50px ;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+
+            
+
+        }
+        @media screen and (max-width: 800px) {
+            .container{
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        }
+        input{
+            margin-top: 30px;
+            padding: 10px 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <img src="DATA/Png_WeTube.png" alt="" class="HEADING">
+    <div class="main">
+        <div class="container">
+            <h1>START A PRTY</h1>
+            <input type="text" placeholder="USER NAME">
+            <br>
+            <input type="text" placeholder="CODE">
+            <br>
+            <button>
+                CREAT NOW
+            </button>
+
+        </div>
+        <div class="container">
+            <h1>JOIN A PRTY       </h1>
+            <input type="text" placeholder="USER NAME">
+            <br>
+            <input type="text" placeholder="CODE">
+            <br>
+            <button>
+                JOIN NOW
+            </button>
+
+        </div>
+    </div>
+
+
+    </header>
+</body>
+</html>
