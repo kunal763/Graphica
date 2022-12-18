@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <form>
+        <input type = "button" class=" mt-0 mb-0 mx-0 bg-blue-500 rounded-md hover:bg-blue-400" value = "Enter Your Playlist" onclick = "fun();" />
+        </form>
+    <main class="container">
+        
+        <section class="main-video">
+            <video src="videos/Dekha Ek Khwab Song - Silsila - Amitabh Bachchan, Rekha - Kishore Kumar, Lata Mangeshkar, Shiv-Hari.mp4" controls autoplay muted></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+
+        <section class="video-playlist">
+            <h3 class="title">Friend's Material</h3>
+            <!-- nbsp denotes nonbreaking space -->
+            <p>9 Videos &nbsp;  &nbsp; Time</p>
+            <div class="videos">
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js">
+       
+    </script>
+    <script type="text/javascript"> function fun() {
+        
+        prompt("Enter your url","");
+}</script>
+</body>
+
+</html>
