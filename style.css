@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+.background{
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    transition: 2s;
+    height: 10000px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    margin: 20px;
+
+}
+.nav-list{
+    margin-left: 10vh;
+    transition: .2s;
+
+}
+.nav-list:hover{
+    letter-spacing: .3em;
+    color: aqua;
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 30px;
+    transition: .2s;  
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 2px;
+
+}
+.login:hover{
+    color: white;
+    background-color:black;
+    letter-spacing: .5em;
+
+}
+main{
+    margin-left: 100px;
+    margin-top:150px;
+}
+main h1{
+    font-size: 4em;
+}
+main p{
+    font-size: 2em;
+    margin: 10px 0px 20px 0px;
+}
+main a{
+    text-decoration: none;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 7px 30px;
+    transition: 0.2s;
+    color: black;
+    background: white;
+}
+main a:hover{
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    background: black ;
+    color: white;
+}
+footer p{
+    text-align: center;
+    margin-top: 250px;
+}
+@media screen and (max-width:1080px)  {
+    .nav-list{
+        display: none;
+    }
+    
+}

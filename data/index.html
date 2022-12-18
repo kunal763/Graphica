@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Devion</title>
+    <!-- you can avoid adding script file if you already have linked your css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <style> 
+        .design {
+            background-color: rgba(255, 255, 255, 0.13);
+            width: fit-content;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <picture>
+
+        <source media="(max-width: 1142px)" srcset="partymobile.jpg" style="filter: blur(2px);
+        -webkit-filter: blur(2px);">
+
+        <img src="friends-watching-movies-together-home-2157127.jpg" alt="" srcset="" class="w-full fixed" style="  filter: blur(2px);
+        -webkit-filter: blur(2px);">
+    </picture>
+
+
+    <div class="main flex flex-col absolute py-10 px-16 rounded-2xl design font-mono">
+
+        <input type="text" name="" placeholder="Email Id or Phone No."
+            class="h-12 rounded-md py-5 w-80 px-2 outline-yellow-200">
+        <input type="password" name="" placeholder="Password" class="h-12 rounded-md my-3 px-2  outline-yellow-200">
+        <a class="text-white text-lg font-semibold bg-yellow-500 py-4 my-2 rounded-md hover:bg-yellow-600 text-center"
+            href="/local-party.html"><button>Sign
+                In</button></a>
+        <hr class=" mt-4 pb-2 ">
+        <span class="mx-auto text-white">or <span class="hover:underline cursor-pointer font-medium">Sign In
+                using</span></span>
+    </div>
+    <div class="  main flex fixed  mt-56 rounded-2xl w-80 justify-center items-center py-8 px-16 design">
+        <button class=""><img src="icons8-google-48.png" alt="" srcset=""
+                class="w-12 opacity-90 hover:opacity-100  px-2 hover:animate-bounce "></button>
+        <button class=""> <img src="icons8-twitter-48.png" alt="" srcset=""
+                class="w-12 opacity-90 hover:opacity-100   px-2 hover:animate-bounce"></button>
+        <button class=""><img src="icons8-github-64.png" alt="" srcset=""
+                class="w-12 opacity-90 hover:opacity-100  px-2 hover:animate-bounce"></button>
+
+    </div>
+
+
+</body>
+
+</html>
